@@ -20,7 +20,7 @@
 | Pico | Switch |
 |------|--------|
 | VSys | Vcc |
-| GP?? | out |
+| GP22 | out |
 | Gnd | Gnd |
 
 *Note that the switch is connected to VSys on the Pico so we don't overload the Pico's input. My LED is rated for 12V but lights up with the 3.3V that Vsys provides.*
