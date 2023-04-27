@@ -1,4 +1,4 @@
-# KaiTracker boot.py
+# KaiTracker fsrename.py
 #
 # SPDXVersion: SPDX-2.3
 # SPDX-FileCopyrightText: Copyright 2023 Lisa St.John
@@ -10,5 +10,4 @@ import storage
 storage.remount("/", readonly=False)
 storage.getmount("/").label="KaiTracker"
 
-if supervisor.runtime.usb_connected:
-    storage.remount("/", readonly=True)
+storage.remount("/", readonly=True)
